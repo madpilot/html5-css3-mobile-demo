@@ -1,0 +1,261 @@
+body {
+  font-size: 12px;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+body > * {
+  margin: 0 auto;
+}
+body br.clear {
+  clear: both;
+}
+body header {
+  display: block;
+  background-color: #afc1bd;
+  background-image: -moz-linear-gradient(19% 0% 270deg, #afc1bd, #adbfbb);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#afc1bd), to(#adbfbb));
+  padding: 10px 40px 0 40px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #8f9f9e;
+}
+body header img.logo {
+  float: left;
+}
+body header h1 {
+  font-size: 30px;
+  color: #5e746d;
+  float: left;
+  width: 480px;
+  line-height: 106px;
+  text-align: center;
+}
+body header h1 span {
+  font-weight: bold;
+}
+body > section {
+  padding: 40px;
+  width: 880px;
+  display: block;
+  clear: left;
+  line-height: 20px;
+}
+body > section strong {
+  font-weight: bold;
+}
+body > section em {
+  font-style: italic;
+}
+body > section p {
+  color: #525f5f;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+body > section a {
+  color: #2b6699;
+  text-decoration: none;
+}
+body > section h1 {
+  color: #afc1bd;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+body > section h2 {
+  color: #5e746d;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+body > section h3 {
+  color: #5e756e;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+body > section h4 {
+  color: #5e746d;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+}
+body > section ul {
+  color: #525f5f;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 1.2em;
+}
+body > section li {
+  list-style-type: square;
+  margin-top: 10px;
+}
+body > section img {
+  float: left;
+  margin: 0 40px 20px 0;
+}
+body > section span.image {
+  background-color: #e2e9e5;
+  float: left;
+  margin: 0 40px 20px 0;
+}
+body > section span.image img {
+  display: inline;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+body > section span.image p {
+  font-size: 11px;
+  font-style: italic;
+  margin: 0 0 5px 10px;
+}
+body > section aside {
+  background-color: #e1e8e4;
+  float: right;
+  font-style: italic;
+  margin: 20px 0 20px 20px;
+  width: 300px;
+}
+body > section aside p {
+  color: #5e746d;
+  font-size: 14px;
+  margin: 20px;
+}
+body footer {
+  font-size: 11px;
+  display: block;
+  color: #c5d2d1;
+  height: 40px;
+  line-height: 20px;
+  background-color: #4a5654;
+  padding: 0 40px;
+  width: 880px;
+  text-align: center;
+}
+body footer a {
+  color: white;
+  text-decoration: none;
+}
+body footer small {
+  display: block;
+  color: #8b9f9d;
+}
+body section.touch {
+  position: absolute;
+  overflow: hidden;
+  top: 130px;
+  right: 0;
+  bottom: 40px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+body section.touch a {
+  display: block;
+  position: relative;
+  z-index: 1000;
+}
+body section > article {
+  -webkit-backface-visibility: hidden;
+  -webkit-box-sizing: border-box;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0) scale(1);
+  background-color: white;
+  display: none;
+  padding: 40px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  min-height: 100%;
+}
+body footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+  
+body header {
+  height: 117px;
+}
+
+body section > article p {
+  font-size: 16px;
+}
+
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+  body > * {
+    width: 960px;
+  }
+  body section.touch {
+    width: 1024px;
+  }
+  body > header, body > footer, body > nav {
+    width: 944px;
+  }
+  body > section {
+    width: 944px;
+  }
+  body section > article {
+    width: 1024px;
+  }
+}
+
+@media screen and (max-device-width: 768px) and (orientation: portrait) {
+  body > * {
+    width: 704px;
+  }
+  body section.touch {
+    width: 768px;
+  }
+  body > header, body > footer, body > nav {
+    width: 688px;
+  }
+  body > section {
+    width: 688px;
+  }
+  body section > article {
+    width: 768px;
+  }
+}
+
+@-webkit-keyframes slideinfromright {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) rotate(0) scale(1);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0) scale(1);
+  }
+}
+
+@-webkit-keyframes slideouttoright {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0) scale(1);
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) rotate(0) scale(1);
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
